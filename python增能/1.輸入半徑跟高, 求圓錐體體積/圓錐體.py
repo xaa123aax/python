@@ -1,9 +1,9 @@
-r = float(input('請輸入半徑'))
-
-h = float(input('請輸入高'))
-
+r=input('請輸入半徑：')
+h=input('請輸入高：')
+r=float(r)
+h=float(h)
 pi=3.14
 
-result = pi * (r*r) * h / 3
+r3=pi*r*r/3*h
 
-print('圓錐體體積:' + str(result))
+print(r3)
