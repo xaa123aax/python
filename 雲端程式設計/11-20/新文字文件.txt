@@ -1,0 +1,6 @@
+if __name__ == '__main__':
+    for i in range(0, 100):
+        if is_odd(i) != (i%2 == 1):
+            print('error odd', i)
+        if is_even(i) != (i%2 == 0):
+            print('error even', i)

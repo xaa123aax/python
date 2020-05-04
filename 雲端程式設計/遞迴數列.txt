@@ -1,0 +1,14 @@
+n=int(input("請輸入一個數"))
+a=0
+a0=1
+a1=2
+an=3*a1+5*a0+1
+while(a!=n-2):
+
+    a0=a1
+    a1=an
+    an=3*a1+5*a0+1
+    a=a+1
+
+    
+print("a"+str(n)+"="+str(an))10
