@@ -1,7 +1,7 @@
 while True:
     identity = input('請輸入身份證字號')
         #檢驗第一位是否為大寫       #檢驗第二位是否為1或2(男性1女性2)               #總長度要為10
-    if identity[0].isupper() and (identity[1] == '1' or identity[1] == '2' and len(identity) == 10):
+    if identity[0].isupper() and (identity[1] == '1' or identity[1] == '2') and len(identity) == 10:
         break
     else:
         print("格式錯誤，請再輸入一次")
@@ -27,11 +27,11 @@ for i in identity[1:]:
     #最後兩個數字是1
     if j!=1:
         j=j-1
-    print(total)
+
 
 if total%10==0:
-    print("正確")
+    print("正確的身分證")
 else:
-    print("錯誤")
+    print("錯誤的身分證")
 
 
